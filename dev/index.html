@@ -50,27 +50,31 @@
 <nav id="top" class="nav-main col-l-12 col-m-12 col-s-12 fixed-nav-bar">
     <div class="nav-collapse">
       <div class="logo">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+          <a href="/"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <g id="Icon_3">
 	<polygon points="31.25,78 31.25,71.75 25,71.75 25,65.5 18.75,65.5 18.75,53 12.499,53 12.499,40.5 18.75,40.5 
 		18.75,34.25 25,34.25 25,28 31.25,28 31.25,21.75 68.75,21.75 68.75,28 75,28 75,34.25 81.25,34.25 81.25,46.75 87.499,46.75 
 		87.499,59.25 81.25,59.25 81.25,65.5 75,65.5 75,71.75 68.75,71.75 68.75,78 	"/>
 </g>
 </svg>
-
+</a>
       </div>
       <ul class="menu hide-on-small">
           
               <li>
-                  <a href="#portfolio" class="text-button nav-item">Portfolio</a>
+                  <a href="/" class="text-button nav-item">Work</a>
               </li>
           
               <li>
-                  <a href="#about" class="text-button nav-item">About</a>
+                  <a href="/writing" class="text-button nav-item">Writing</a>
               </li>
           
               <li>
-                  <a href="#contact" class="text-button nav-item">Contact</a>
+                  <a href="/about" class="text-button nav-item">About</a>
+              </li>
+          
+              <li>
+                  <a href="/contact" class="text-button nav-item">Contact</a>
               </li>
           
       </ul>
@@ -80,14 +84,17 @@
   <!-- Header -->
 <header class="main-header">
     <section class="description row row-widetablet">
-      <span class="text-headline">Hi, I'm <span class="text-bold">Liam Craver</span>.</span>
-      <br>
-      <span class="text-subhead">Developer and Designer from New Orleans</span>
+      
+        <span class="text-headline">Hi, I'm <span class="text-bold">Liam Craver</span>.</span>
+        <br>
+        <span class="text-subhead">Developer and Designer from New Orleans</span>
+      
     </section>
 </header>
 
-  <!-- Portfolio Grid Section -->
-<section id="portfolio" class="portfolio row row-widetablet">
+  
+<!-- Portfolio Grid Section -->
+<section id="portfolio" class="portfolio row row-fullwidth">
     
       
       
@@ -99,9 +106,20 @@
             <div class="logo text-center text-title">
               Project Arrhythmia
             </div>
-            <div class="description text-body-1">
+            <div class="description col text-body-1">
               A game all about music and other stuff. And Crazy stuffz! :D
               <a href="http://limestudios.net/arrhythmia" class="readmore button primary">Read More</a>
+            </div>
+            <div class="info col text-body-1">
+              <div class="client col-">
+                Lime Studios
+              </div>
+              <div class="date">
+                Ongoing
+              </div>
+              <div class="service">
+                Game Development
+              </div>
             </div>
           </div>
         </section>
@@ -147,7 +165,9 @@
       
     
       
-        <section id="youtube" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-12 portfolio-element youtube" data-toggle="modal">
+      
+      
+        <section id="youtube" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-3 portfolio-element youtube" data-toggle="modal">
           <div class="caption-bg col" style="background-color: rgb(205,32,31);">
             <object class="icon" data="./assets/img/portfolio/youtube/youtube.svg" type="image/svg+xml"></object>
           </div>
@@ -155,8 +175,45 @@
             <div class="logo text-center text-title">
               Youtube
             </div>
-            <div class="description col text-body-1">
+            <div class="description text-body-1">
               My personal Youtube channel where I post updates on all my current projects.
+              <a href="http://limestudios.net/arrhythmia" class="readmore button primary">Read More</a>
+            </div>
+          </div>
+        </section>
+      
+    
+      
+      
+      
+        <section id="tumblr" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-3 portfolio-element tumblr" data-toggle="modal">
+          <div class="caption-bg col" style="background-color: #36465d;">
+            <object class="icon" data="./assets/img/portfolio/tumblr/tumblr.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="caption col">
+            <div class="logo text-center text-title">
+              Tumblr
+            </div>
+            <div class="description text-body-1">
+              My personal tumblr.
+              <a href="http://limestudios.net/arrhythmia" class="readmore button primary">Read More</a>
+            </div>
+          </div>
+        </section>
+      
+    
+      
+      
+        <section id="dribbble" class="col-p-12 col-wp-12 col-t-12 col-wt-12 col-c-6 portfolio-element dribbble" data-toggle="modal">
+          <div class="caption-bg col" style="background-color: #ea4c89;">
+            <object class="icon" data="./assets/img/portfolio/dribbble/dribbble.svg" type="image/svg+xml"></object>
+          </div>
+          <div class="caption col">
+            <div class="logo text-center text-title">
+              Dribbble
+            </div>
+            <div class="description col text-body-1">
+              My personal dribbble.
               <a href="http://limestudios.net/arrhythmia" class="readmore button primary">Read More</a>
             </div>
             <div class="info col text-body-1">
@@ -172,7 +229,6 @@
             </div>
           </div>
         </section>
-      
       
       
     
@@ -320,78 +376,78 @@
     </div>
 </div>
 
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col-push-l-2 col-l-8">
+                <div class="modal-body">
+                    <h2>Tumblr</h2>
+                    <img src="./assets/img/portfolio/tumblr.png" class="img-responsive img-centered" alt="Tumblr">
+                    <p>My personal tumblr.</p>
+                    <section class="modal-footer">
+                        <div>
+                            Client:
+                            <a href="https://www.youtube.com/user/studioslime">Lime Studios</a>
+                        </div>
+                        <div>
+                            Date:
+                            <a href="https://www.youtube.com/user/studioslime">Ongoing</a>
+                        </div>
+                        <div>
+                            Service:
+                            <a href="https://www.youtube.com/user/studioslime">Game Development / Web Development / Misc</a>
+                        </div>
+                    </section>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-  <!-- Blog -->
-<section id="blog-posts" class="blog-posts">
-  
-        
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col-push-l-2 col-l-8">
+                <div class="modal-body">
+                    <h2>Dribbble</h2>
+                    <img src="./assets/img/portfolio/dribbble.png" class="img-responsive img-centered" alt="Dribbble">
+                    <p>My personal dribbble.</p>
+                    <section class="modal-footer">
+                        <div>
+                            Client:
+                            <a href="https://www.youtube.com/user/studioslime">Lime Studios</a>
+                        </div>
+                        <div>
+                            Date:
+                            <a href="https://www.youtube.com/user/studioslime">Ongoing</a>
+                        </div>
+                        <div>
+                            Service:
+                            <a href="https://www.youtube.com/user/studioslime">Game Development / Web Development / Misc</a>
+                        </div>
+                    </section>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-        <article id="" class="article-preview article-preview-long-form">
-          <header class="article-preview-header">
-            <a href="/2015/trent/" rel="prefetch" title="Hey whatz up" rel=prefetch role=link>
-              Hey whatz up
-            </a>
-          </header>
-          <section class="article-preview-excerpt">
-            <blockquote>
-              
-                A short post about my work done for SimplySusan.
-              
-            </blockquote>
-          </section>
-          <footer class="article-preview-footer">
-            <div>Published on <time>May 28, 2014</time></div>
-            
-          </footer>
-        </article>
-        
 
-        <article id="" class="article-preview article-preview-long-form">
-          <header class="article-preview-header">
-            <a href="/2015/test2/" rel="prefetch" title="This is a test" rel=prefetch role=link>
-              This is a test
-            </a>
-          </header>
-          <section class="article-preview-excerpt">
-            <blockquote>
-              
-                There is no description for this article.
-              
-            </blockquote>
-          </section>
-          <footer class="article-preview-footer">
-            <div>Published on <time>January 20, 2014</time></div>
-            
-          </footer>
-        </article>
-        
 
-        <article id="" class="article-preview article-preview-long-form">
-          <header class="article-preview-header">
-            <a href="/2015/test/" rel="prefetch" title="Post One" rel=prefetch role=link>
-              Post One
-            </a>
-          </header>
-          <section class="article-preview-excerpt">
-            <blockquote>
-              
-                A short post about my work done for SimplySusan.
-              
-            </blockquote>
-          </section>
-          <footer class="article-preview-footer">
-            <div>Published on <time>January 28, 2014</time></div>
-            
-          </footer>
-        </article>
-        </section>
-
-  <!-- About -->
-<section class="">
-</section>
-  <!-- Contact -->
-<section id="contact">
-</section>
   <!-- Footer -->
 <footer class="background-primary">
 </footer>
@@ -450,10 +506,6 @@
 	</script>
 </div>
 
-  <!--
-<h1>Home</h1>
-Testing
- -->
 </body>
 
 </html>
