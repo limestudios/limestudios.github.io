@@ -12,7 +12,11 @@ $(document).ready(function(){
         '<article class="col col-p-12 col-wp-12 col-t-12 col-wt-4 col-c-3">'+
         '<div class="padding">'+
           responseObj[i].name+
-        '</div></article>'
+        '</div>'+
+        '<div class="labels row">'+
+          getLabels(responseObj[i])+
+        '</div>'+
+        '</article>'
       );
     }
   });
@@ -29,7 +33,11 @@ $(document).ready(function(){
         '<article class="col col-p-12 col-wp-12 col-t-12 col-wt-4 col-c-3">'+
         '<div class="padding">'+
           responseObj[i].name+
-        '</div></article>'
+        '</div>'+
+        '<div class="labels row">'+
+          getLabels(responseObj[i])+
+        '</div>'+
+        '</article>'
       );
     }
   });
@@ -46,8 +54,43 @@ $(document).ready(function(){
         '<article class="col col-p-12 col-wp-12 col-t-12 col-wt-4 col-c-3">'+
         '<div class="padding">'+
           responseObj[i].name+
-        '</div></article>'
+        '</div>'+
+        '<div class="labels row">'+
+          getLabels(responseObj[i])+
+        '</div>'+
+        '</article>'
       );
     }
   });
+
+  function getLabels(json) {
+    if (typeof json.labels[0] === 'undefined') {
+      return "";
+    } else {
+      var returnString = "";
+      for(var i = 0; i < json.labels.length; i++) {
+        var color = "";
+        switch(json.labels[i].name) {
+          case "THIS NEEDS TO HAPPEN ASAP":
+              color = "#f44336";
+            break;
+          case "A problem that really needs to be addressed":
+              color = "#FF9800";
+            break;
+          case "A problem that can wait":
+              color = "#FFEB3B";
+            break;
+          case "Feature":
+              color = "#4CAF50";
+            break;
+          default:
+              color = "#9E9E9E";
+            break;
+        }
+
+        returnString += '<div class="label col-p-2 col-wp-2 col-t-2 col-wt-2 col-c-2" style="background-color: '+color+';"></div>';
+      }
+      return returnString;
+    }
+  }
 });
