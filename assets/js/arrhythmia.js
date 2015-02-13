@@ -12,6 +12,9 @@ $(document).ready(function(){
         '<article class="col col-p-12 col-wp-12 col-t-12 col-wt-4 col-c-3">'+
         '<div class="padding">'+
           responseObj[i].name+
+          '<p>'+
+            jQuery.timeago(responseObj[i].dateLastActivity)+
+          '</p>'+
         '</div>'+
         '<div class="labels row">'+
           getLabels(responseObj[i])+
@@ -33,6 +36,9 @@ $(document).ready(function(){
         '<article class="col col-p-12 col-wp-12 col-t-12 col-wt-4 col-c-3">'+
         '<div class="padding">'+
           responseObj[i].name+
+          '<p>'+
+            jQuery.timeago(responseObj[i].dateLastActivity)+
+          '</p>'+
         '</div>'+
         '<div class="labels row">'+
           getLabels(responseObj[i])+
@@ -54,6 +60,9 @@ $(document).ready(function(){
         '<article class="col col-p-12 col-wp-12 col-t-12 col-wt-4 col-c-3">'+
         '<div class="padding">'+
           responseObj[i].name+
+          '<p>'+
+            jQuery.timeago(responseObj[i].dateLastActivity)+
+          '</p>'+
         '</div>'+
         '<div class="labels row">'+
           getLabels(responseObj[i])+
