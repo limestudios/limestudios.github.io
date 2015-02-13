@@ -120,7 +120,7 @@
         <section id="arrhythmia" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element arrhythmia game-development active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #E57373;">
             <!--<span class="title">Project Arrhythmia</span>-->
-            <object class="icon" data="./assets/img/portfolio/arrhythmia/arrhythmia.svg" type="image/svg+xml"></object>
+            <img class="icon" src="./assets/img/portfolio/arrhythmia/arrhythmia.svg"></img>
           </div>
           <a href="/arrhythmia">
             <div class="caption col">
@@ -141,7 +141,7 @@
         <section id="simplysusan" class="col-p-12 col-wp-12 col-t-12 col-wt-6 col-c-6 portfolio-element simplysusan web-design active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #4FC3F7;">
             <!--<span class="title">Simply Susan</span>-->
-            <object class="icon" data="./assets/img/portfolio/simplysusan/simplysusan.svg" type="image/svg+xml"></object>
+            <img class="icon" src="./assets/img/portfolio/simplysusan/simplysusan.svg"></img>
           </div>
           <a href="/simplysusan">
             <div class="caption col">
@@ -163,7 +163,7 @@
         <section id="tableflip" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element tableflip misc active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #81C784;">
             <!--<span class="title">Table Flip Podcast</span>-->
-            <object class="icon" data="./assets/img/portfolio/tableflip/tableflip.svg" type="image/svg+xml"></object>
+            <img class="icon" src="./assets/img/portfolio/tableflip/tableflip.svg"></img>
           </div>
           <a href="/tableflip">
             <div class="caption col">
@@ -184,7 +184,7 @@
         <section id="tumblr" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element tumblr tumblr social active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #7986CB;">
             <!--<span class="title">Tumblr</span>-->
-            <object class="icon" data="./assets/img/portfolio/tumblr/tumblr.svg" type="image/svg+xml"></object>
+            <img class="icon" src="./assets/img/portfolio/tumblr/tumblr.svg"></img>
           </div>
           <a href="/tumblr">
             <div class="caption col">
@@ -205,7 +205,7 @@
         <section id="youtube" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element youtube youtube social active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #E57373;">
             <!--<span class="title">Youtube</span>-->
-            <object class="icon" data="./assets/img/portfolio/youtube/youtube.svg" type="image/svg+xml"></object>
+            <img class="icon" src="./assets/img/portfolio/youtube/youtube.svg"></img>
           </div>
           <a href="/youtube">
             <div class="caption col">
@@ -226,7 +226,7 @@
         <section id="dribbble" class="col-p-12 col-wp-12 col-t-12 col-wt-3 col-c-3 portfolio-element dribbble dribbble social active" data-toggle="modal">
           <div class="caption-bg col" style="background-color: #F06292;">
             <!--<span class="title">Dribbble</span>-->
-            <object class="icon" data="./assets/img/portfolio/dribbble/dribbble.svg" type="image/svg+xml"></object>
+            <img class="icon" src="./assets/img/portfolio/dribbble/dribbble.svg"></img>
           </div>
           <a href="/dribbble">
             <div class="caption col">
@@ -473,7 +473,7 @@
 <script src="/assets/js/jquery.js"></script>
 <script src="/assets/js/jquery.timeago.js"></script>
 <script src="/assets/js/forms.js"></script>
-<script src="/assets/js/sort.js"></script>
+<!--<script src="/assets/js/sort.js"></script>-->
 <script src="/assets/js/arrhythmia.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
@@ -492,41 +492,6 @@
 <!--<script src="./assets/js/freelancer.js"></script>
 
 <!--<script src="./assets/js/animatedHeader.js"></script>-->
-
-<div class="hidden">
-	<script type="text/javascript">
-		<!--//--><![CDATA[//><!--
-			//var images = new Array()
-			//function preload() {
-				//for (i = 0; i < preload.arguments.length; i++) {
-					//images[i] = new Image()
-					//images[i].src = preload.arguments[i]
-				//}
-			//}
-			//preload(
-				//"./assets/img/gifolio/0.png",
-				//"./assets/img/gifolio/1.png",
-				//"./assets/img/gifolio/2.png",
-				//"./assets/img/gifolio/3.png",
-				//"./assets/img/gifolio/4.png",
-				//"./assets/img/gifolio/5.png"
-			//)
-		//--><!]]>
-
-		$("a[href*=#]:not([href=#])").click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html,body').animate({
-						scrollTop: target.offset().top //- ($(window).height() / 10)
-					}, 1000);
-					return false;
-				}
-			}
-		});
-	</script>
-</div>
 
 </body>
 
