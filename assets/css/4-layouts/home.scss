@@ -3,10 +3,16 @@
   @include clearfix();
   //min-height: 100vh;
 
-  margin-bottom: 256px;
-
   @media (max-width: $screen-mobile) {
     display: block;
+  }
+
+  &.small {
+    margin-bottom: 64px;
+  }
+
+  &.normal {
+    margin-bottom: 256px;
   }
 }
 
@@ -15,12 +21,12 @@
   margin: 0 auto;
   flex: 1;
 
-  &.home-sections-normal {
+  &.normal {
     position: relative;
     top: 256px;
   }
 
-  &.home-sections-small {
+  &.small {
     position: relative;
     top: 64px;
   }
