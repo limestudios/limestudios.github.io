@@ -1,9 +1,7 @@
 .post-wrap {
   display: flex;
   //min-height: 100vh;
-
-margin-bottom: 64px;
-
+  margin-bottom: 64px;
 
   @media (max-width: $screen-mobile) {
     display: block;
@@ -14,8 +12,8 @@ margin-bottom: 64px;
   max-width: 1680px;
   margin: 0 auto;
   flex: 1;
-    position: relative;
-    top: 64px;
+  position: relative;
+  top: 64px;
 
   .post-header {
     max-height: 640px;
@@ -30,32 +28,36 @@ margin-bottom: 64px;
       height: 100vw;
     }
 
-    h2 {
-      opacity: 0;
+    .post-text {
+      padding: 16px;
+      h2 {
+        opacity: 0;
+        animation: fadein 0.25s;
+        animation-delay: 0.25s;
+        animation-fill-mode: forwards;
 
-      animation: fadein 0.25s;
-      animation-delay: 0.25s;
-      animation-fill-mode: forwards;
+        letter-spacing: 1px;
 
-      color: $grey-800;
-      margin: 36px 0 0px 16px;
-      font-size: 36px;
+        color: $grey-900;
+        margin: 32px 0 18px 0;
+        font-size: 24px;
 
-      @media (max-width: $screen-mobile) {
-        font-size: 28px;
+        @media (max-width: $screen-mobile) {
+          font-size: 28px;
+        }
       }
-    }
 
-    h4 {
-      opacity: 0;
+      p {
+        opacity: 0;
 
-      animation: fadein 0.25s;
-      animation-delay: 0.5s;
-      animation-fill-mode: forwards;
+        animation: fadein 0.25s;
+        animation-delay: 0.5s;
+        animation-fill-mode: forwards;
 
-      color: $grey-800;
-      font-size: 18px;
-      margin: 24px 0 8px 16px;
+        color: $grey-900;
+        font-size: 14px;
+        font-family: $type-secondary;
+      }
     }
 
     .image-wrapper {
@@ -63,10 +65,11 @@ margin-bottom: 64px;
       .cover-image {
         position: absolute;
         z-index: -1;
-        top: 0px;
-        bottom: 0px;
+        top: 50%;
+        left: 50%;
         min-height: 100%;
         min-width: 100%;
+        transform: translateX(-50%) translateY(-50%);
       }
     }
   }
@@ -75,7 +78,7 @@ margin-bottom: 64px;
     font-size: 17px;
     font-family: $type-secondary;
     line-height: 1.88235;
-    padding: 64px 0 128px 0;
+    padding: 64px 0 0 0;
 
     @include clearfix();
     opacity: 0;

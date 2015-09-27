@@ -870,7 +870,8 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1px; }
 
 .large, h2 {
-  font-size: 42px;
+  font-size: 24px;
+  font-weight: 300;
   line-height: 1.14; }
 
 .bigger, h3 {
@@ -1070,10 +1071,10 @@ a.line-s {
     .card-container a.card .title {
       padding: 0 0 0 20px;
       position: absolute;
-      top: 24px;
-      letter-spacing: 0px;
-      font-size: 28px;
-      font-weight: 400;
+      top: 16px;
+      letter-spacing: 1px;
+      font-size: 24px;
+      font-weight: 300;
       z-index: 100; }
     .card-container a.card .card-content {
       position: absolute;
@@ -1179,8 +1180,10 @@ header {
     left: 0px;
     right: 0px;
     height: 256px;
-    padding: 0 20px;
+    padding: 0 16px;
     box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1); }
+    header .header-position.small .logo-wrapper .text {
+      font-size: 28px; }
     header .header-position .header-wrapper {
       margin: 0 auto;
       max-width: 1680px;
@@ -1195,43 +1198,56 @@ header {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      header .header-position .logo-wrapper .logo {
+      header .header-position .logo-wrapper a {
         height: 100%;
-        max-width: 96px;
-        margin: 0;
-        padding: 0;
-        float: left; }
-      header .header-position .logo-wrapper .text {
-        -webkit-transition: 0.1s all ease-in-out;
-                transition: 0.1s all ease-in-out;
-        padding-left: 20px;
-        float: left;
-        font-family: "Roboto Mono", Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-weight: 400;
-        font-size: 56px;
-        margin: 0;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased; }
+        width: 100%;
+        display: block;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        header .header-position .logo-wrapper a .logo {
+          padding: 9px 0;
+          height: calc(100% - 18px);
+          max-width: 96px;
+          margin: 0;
+          float: left;
+          display: block; }
+        header .header-position .logo-wrapper a .text {
+          -webkit-transition: 0.1s all ease-in-out;
+                  transition: 0.1s all ease-in-out;
+          padding-left: 20px;
+          float: left;
+          font-family: "Roboto Mono", Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-weight: 300;
+          font-size: 56px;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+          text-decoration: none;
+          color: #424242; }
     header .header-position .home-nav {
       float: right; }
       header .header-position .home-nav ul {
         list-style: none;
-        margin: 20px 20px 0 0; }
+        margin: 20px 0 0 0; }
         header .header-position .home-nav ul li {
           margin: 0;
           float: left;
           font-size: 16px; }
-          header .header-position .home-nav ul li:last-child {
-            padding-right: 0px; }
           header .header-position .home-nav ul li a {
-            color: #212121; }
+            color: #212121;
+            font-weight: 300; }
 
 @media (max-width: 775px) {
   header .header-position {
     z-index: 10001; }
     header .header-position .home-nav {
       float: right;
-      width: calc(100% - 96px) !important; }
+      width: calc(100% - 48px) !important; }
       header .header-position .home-nav ul {
         margin: 10px; }
         header .header-position .home-nav ul li a:hover {
@@ -1329,43 +1345,49 @@ section.designs .cf {
     @media (max-width: 775px) {
       .post-sections .post-header {
         height: 100vw; } }
-    .post-sections .post-header h2 {
-      opacity: 0;
-      -webkit-animation: fadein 0.25s;
-              animation: fadein 0.25s;
-      -webkit-animation-delay: 0.25s;
-              animation-delay: 0.25s;
-      -webkit-animation-fill-mode: forwards;
-              animation-fill-mode: forwards;
-      color: #424242;
-      margin: 36px 0 0px 16px;
-      font-size: 36px; }
-      @media (max-width: 775px) {
-        .post-sections .post-header h2 {
-          font-size: 28px; } }
-    .post-sections .post-header h4 {
-      opacity: 0;
-      -webkit-animation: fadein 0.25s;
-              animation: fadein 0.25s;
-      -webkit-animation-delay: 0.5s;
-              animation-delay: 0.5s;
-      -webkit-animation-fill-mode: forwards;
-              animation-fill-mode: forwards;
-      color: #424242;
-      font-size: 18px;
-      margin: 24px 0 8px 16px; }
+    .post-sections .post-header .post-text {
+      padding: 16px; }
+      .post-sections .post-header .post-text h2 {
+        opacity: 0;
+        -webkit-animation: fadein 0.25s;
+                animation: fadein 0.25s;
+        -webkit-animation-delay: 0.25s;
+                animation-delay: 0.25s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+        letter-spacing: 1px;
+        color: #212121;
+        margin: 32px 0 18px 0;
+        font-size: 24px; }
+        @media (max-width: 775px) {
+          .post-sections .post-header .post-text h2 {
+            font-size: 28px; } }
+      .post-sections .post-header .post-text p {
+        opacity: 0;
+        -webkit-animation: fadein 0.25s;
+                animation: fadein 0.25s;
+        -webkit-animation-delay: 0.5s;
+                animation-delay: 0.5s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+        color: #212121;
+        font-size: 14px;
+        font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif; }
     .post-sections .post-header .image-wrapper .cover-image {
       position: absolute;
       z-index: -1;
-      top: 0px;
-      bottom: 0px;
+      top: 50%;
+      left: 50%;
       min-height: 100%;
-      min-width: 100%; }
+      min-width: 100%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+          -ms-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%); }
   .post-sections .post-content {
     font-size: 17px;
     font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
     line-height: 1.88235;
-    padding: 64px 0 128px 0;
+    padding: 64px 0 0 0;
     *zoom: 1;
     opacity: 0;
     -webkit-animation: slidein 0.25s;
@@ -1410,8 +1432,6 @@ section.designs .cf {
     opacity: 1; } }
 
 .footer {
-  background-color: #263238;
-  height: 180px;
   *zoom: 1;
   position: relative; }
   .footer:before,
@@ -1420,35 +1440,68 @@ section.designs .cf {
     display: table; }
   .footer:after {
     clear: both; }
-  .footer .footer-wrap {
-    max-width: 1680px;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    height: 100%; }
-    .footer .footer-wrap .svg-icon {
+  .footer .footer-top {
+    background-color: #f5f5f5;
+    padding: 0 16px; }
+    .footer .footer-top .footer-social {
+      height: 220px;
+      position: relative;
+      max-width: 1680px;
+      margin: 0 auto; }
+      .footer .footer-top .footer-social .icon-wrapper {
+        position: absolute;
+        bottom: 24px;
+        right: 0px; }
+        .footer .footer-top .footer-social .icon-wrapper a {
+          margin: 0 8px; }
+          .footer .footer-top .footer-social .icon-wrapper a:last-child {
+            margin: 0 0 0 8px; }
+          .footer .footer-top .footer-social .icon-wrapper a.twitter:hover svg path {
+            fill: #64b5f6; }
+          .footer .footer-top .footer-social .icon-wrapper a.github:hover svg path {
+            fill: #9e9e9e; }
+          .footer .footer-top .footer-social .icon-wrapper a.dribbble:hover svg path {
+            fill: #f06292; }
+          .footer .footer-top .footer-social .icon-wrapper a.youtube:hover svg path {
+            fill: #f44336; }
+          .footer .footer-top .footer-social .icon-wrapper a svg {
+            width: 24px; }
+            .footer .footer-top .footer-social .icon-wrapper a svg path {
+              -webkit-transition: all 0.1s ease-in-out;
+                      transition: all 0.1s ease-in-out;
+              fill: #263238; }
+  .footer .footer-bottom {
+    background-color: #263238; }
+    .footer .footer-bottom .footer-wrap {
+      height: 128px;
+      max-width: 1680px;
+      margin: 0 auto;
       display: block;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
-      left: 16px;
-      height: 96px;
-      width: 96px; }
-      .footer .footer-wrap .svg-icon path {
-        fill: #fafafa; }
-    .footer .footer-wrap .copyright {
-      color: #fafafa;
-      letter-spacing: 1px;
-      font-size: 12px;
-      text-transform: uppercase;
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
-      display: block; }
-      .footer .footer-wrap .copyright .red {
-        color: #f44336; }
+      position: relative; }
+      .footer .footer-bottom .footer-wrap .svg-icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: 16px;
+        height: 48px;
+        width: 48px; }
+        .footer .footer-bottom .footer-wrap .svg-icon path {
+          fill: #fafafa; }
+      .footer .footer-bottom .footer-wrap .copyright {
+        color: #fafafa;
+        letter-spacing: 1px;
+        font-size: 12px;
+        text-transform: uppercase;
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        display: block;
+        font-weight: 300; }
+        .footer .footer-bottom .footer-wrap .copyright .red {
+          color: #f44336; }
