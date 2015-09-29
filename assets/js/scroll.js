@@ -4,12 +4,7 @@ $(function() {
     var homeSections = $(".home-sections");
     var homeWrap = $(".home-wrap");
     console.log(homeSections.length);
-    if($(window).height() < 640) {
-      header.removeClass("normal").addClass("small").addClass("small-screen");
-      homeSections.removeClass("normal").addClass("small");
-      homeWrap.removeClass("normal").addClass("small");
-      header.height(64);
-    } else if(homeSections.length > 0) {
+    if(homeSections.length > 0) {
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
             if(!header.hasClass("small-screen"))
@@ -24,21 +19,6 @@ $(function() {
       header.removeClass("normal").addClass("small");
       header.height(64);
     }
-
-    $( window ).resize(function() {
-      if($(window).height() < 640) {
-        header.removeClass("normal").addClass("small").addClass("small-screen");
-        homeSections.removeClass("normal").addClass("small");
-        homeWrap.removeClass("normal").addClass("small");
-        header.height(64);
-      } else {
-        header.removeClass("small").addClass("normal").removeClass("small-screen");
-        homeSections.removeClass("small").addClass("normal");
-        homeWrap.removeClass("small").addClass("normal");
-        var scroll = $(window).scrollTop();
-        header.height(Math.max(64, Math.min(256-scroll, 256)));
-      }
-    });
 
   // handle links with @href started with '#' only
   $(document).on('click', 'a[href^="#"]', function(e) {
