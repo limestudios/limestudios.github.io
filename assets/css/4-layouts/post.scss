@@ -10,24 +10,17 @@
   width: 100%;
   overflow: hidden;
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
-  animation: slidein 0.25s ease-out;
+  animation: slidein 0.25s;
   position: relative;
   top: 64px;
-  margin-bottom: 32px;
-  background-repeat: no-repeat;
-  background-position: center center;
+  margin-bottom: 64px;
 
   &.full {
-    background-size: cover;
-  }
-
-  &.large {
-    background-size: auto;
+    background-size: cover !important;
   }
 
   @media (max-width: $screen-mobile) {
     height: 100vw;
-    margin-bottom: 0px;
   }
 
   .post-text {
@@ -36,11 +29,11 @@
 
     h2 {
       font-family: $type-primary;
-      font-weight: normal;
+      font-weight: 400;
       padding-top: 16px;
       padding-left: 32px;
       opacity: 0;
-      animation: fadein 0.3s ease-out;
+      animation: fadein 0.25s;
       animation-delay: 0.25s;
       animation-fill-mode: forwards;
 
@@ -52,14 +45,12 @@
       line-height: 48px;
 
       @media (max-width: $screen-tablet) {
-        line-height: 26px;
         font-size: 24px;
         padding-left: 24px;
         padding-top: 8px;
       }
 
       @media (max-width: $screen-mobile) {
-        line-height: 26px;
         font-size: 20px;
         padding-left: 16px;
         padding-top: 0px;
@@ -70,8 +61,8 @@
       padding-left: 32px;
       opacity: 0;
 
-      animation: fadein calc(0.3s * (1 / #{$tranSpeed})) ease-out;
-      animation-delay: calc(0.5s * (1 / #{$tranSpeed}));
+      animation: fadein 0.25s;
+      animation-delay: 0.5s;
       animation-fill-mode: forwards;
 
       color: $grey-900;
@@ -114,15 +105,12 @@
   max-width: 1680px;
   margin: 0 auto;
 
-  opacity: 0;
-  animation: slidein calc(0.25s * (1 / #{$tranSpeed})) ease-out;
-  animation-delay: 0.1s;
-  animation-fill-mode: forwards;
-
   .post-content {
-
-    //overflow: hidden;
-    @include clearfix();
+    padding-top: 48px;
+    opacity: 0;
+    animation: slidein 0.25s;
+    //animation-delay: 0.25s;
+    animation-fill-mode: forwards;
 
     max-width: 760px;
     margin: 0 auto;
@@ -160,47 +148,15 @@
       line-height: 32px;
     }
 
-    p, ul, ol, .button  {
-      padding: 0 0 24px 40px;
-      margin: 0 auto;
-      font-weight: 300;
-      -webkit-font-smoothing: antialiased;
-      line-height: 32px;
-      font-size: 17px;
-      font-family: $type-secondary;
-      color: $grey-800;
-    }
-
     p {
-      padding: 0 0 24px 0;
-    }
-
-    .highlight {
-      background-color: $grey-900;
-      padding: 24px;
+      padding-bottom: 24px;
       margin: 0 auto;
       font-weight: 300;
       -webkit-font-smoothing: antialiased;
       line-height: 32px;
       font-size: 17px;
       font-family: $type-secondary;
-      color: $grey-100;
-
-      pre {
-        margin: 0;
-
-        .k {
-          color: $blue-400;
-        }
-
-        .nc, .n {
-          color: $teal-300;
-        }
-
-        .s {
-          color: $deep-orange-200;
-        }
-      }
+      color: $grey-900;
     }
 
     .flex-video {
@@ -220,74 +176,8 @@
       }
     }
 
-    .image-wrapper {
-      margin: 0 auto;
-      display: block;
-      overflow: hidden;
-    }
-
-    .button-wrapper {
-      margin: 0 auto;
-      display: block;
-      @include clearfix();
-
-      a {
-        margin: 24px auto;
-        width: 100%;
-        display: block;
-        background-color: $grey-900;
-        padding: 16px;
-        font-size: 17px;
-        color: $grey-100;
-        transition: all 0.1s ease-in-out;
-        text-transform: uppercase;
-        font-weight: 400;
-        text-align: center;
-
-        &:hover {
-          box-shadow: 0 0 20px 0 rgba(0,0,0,0.2),0 5px 5px 0 rgba(0,0,0,0.24);
-          z-index: 1000;
-        }
-
-        &.float {
-          float: left;
-          margin: 0;
-          padding: 16px 0;
-          @include clearfix();
-
-          &.two {
-            max-width: 50%;
-
-            &.border {
-              max-width: calc(50% - 16px);
-              margin: 8px;
-            }
-          }
-
-          &.three {
-            max-width: 50%;
-            &:first-child {
-              max-width: 100%;
-            }
-
-            &.border {
-              max-width: calc(50% - 16px);
-              &:first-child {
-                max-width: calc(100% - 16px);
-              }
-              margin: 8px;
-            }
-          }
-
-          &.full-width {
-            max-width: 100%;
-          }
-        }
-      }
-    }
-
     img {
-      margin: 24px auto;
+      margin: 32px auto;
       max-width: 100%;
       display: block;
 
@@ -295,85 +185,22 @@
         margin-left: auto;
         margin-right: auto;
         display: block;
-
-        &.small {
-          max-width: 128px;
-        }
-
-        &.medium {
-          max-width: 256px;
-        }
-
-        &.large {
-          max-width: 512px;
-        }
-
-        &.full-width {
-          width: 100%;
-        }
       }
 
-      &.float {
-        float: left;
-        margin: 0;
-        padding: 0;
-        @include clearfix();
+      &.small {
+        max-width: 128px;
+      }
 
-        &.small {
-          max-width: 25%;
+      &.medium {
+        max-width: 256px;
+      }
 
-          &.border {
-            max-width: calc(25% - 16px);
-            padding: 8px;
-          }
+      &.large {
+        max-width: 512px;
+      }
 
-          @media (max-width: $screen-tablet) {
-            max-width: 33.333%;
-
-            &.border {
-              max-width: calc(33.333% - 16px);
-              padding: 8px;
-            }
-          }
-        }
-
-        &.medium {
-          max-width: 33.333%;
-
-          &.border {
-            max-width: calc(33.333% - 16px);
-            padding: 8px;
-          }
-
-          @media (max-width: $screen-tablet) {
-            max-width: 50%;
-
-            &.border {
-              max-width: calc(50% - 16px);
-              padding: 8px;
-            }
-          }
-        }
-
-        &.large {
-          max-width: 50%;
-
-          &.border {
-            max-width: calc(50% - 16px);
-            padding: 8px;
-          }
-
-          @media (max-width: $screen-tablet) {
-            max-width: 100%;
-
-            &.border {
-            }
-          }
-        }
-
-        &.full-width {
-          max-width: 100%;
-        }
+      &.full-width {
+        max-width: 100%;
       }
 
       &.round {
@@ -390,6 +217,5 @@
 
 @keyframes slidein {
     0%   { opacity: 0; transform: translateY(200px); }
-    80%  { transform: translateY(0px); }
     100% { opacity: 1; }
 }

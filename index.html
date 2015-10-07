@@ -11,6 +11,7 @@
 
 		<script src="/assets/js/jquery.js"></script>
 		<script src="/assets/js/scroll.js"></script>
+		<script src="/assets/js/forms.js"></script>
 
 		<!--[if lte IE 8]><script src="/assets/js/ie.js"></script><![endif]-->
 		<!--<script src=/assets/js/bundle.js></script>-->
@@ -56,14 +57,12 @@
 
   <div class="home-wrap normal">
     <header>
-  <div class="header-position normal resize-true">
+  <div class="header-position normal">
     <div class="header-wrapper">
       <nav class="home-nav">
         <ul>
           
-            <li><a class="line" href="/">Home</a></li>
-          
-            <li><a class="line" href="/page/about">About</a></li>
+            <li><a class="line" href="/article/meet-limestudios">About</a></li>
           
             <li><a class="line" href="/games">Games</a></li>
           
@@ -85,91 +84,87 @@
   </div>
 </header>
 
-    <div class="home-sections content-wrap">
-      <section class="card-container transition">
-  <a class="card full-card" href="/page/about">
-  <div class="green">
-    <section class="heading">
+    <div class="home-sections normal">
+      <section class="about card-container" id="about">
+  <a class="card full-card" href="/article/meet-limestudios">
+    <div class="green">
       <h3 class="title">Meet Lime Studios</h3>
-    </section>
-    <div class="card-content">
-      <section class="center-large svg-light"/>
-        <svg class="svg-icon tile-lime" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <div class="card-content">
+        <section class="center-large svg-light"/>
+          <svg class="svg-icon tile-lime" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <path opacity="1" fill="#000000" d="M0,0v100h100V0H0z M87.499,59.251H81.25v6.25H75v6.25h-6.25V78h-37.5v-6.249H25v-6.25h-6.25V53h-6.251
 					V40.5h6.251v-6.249H25v-6.25h6.25v-6.25h37.5v6.25H75v6.25h6.25v12.5h6.249V59.251z"></path>
 </svg>
 
-      </section>
-    </div>
-    <p class="tag">Article</p>
-    <p class="link-icon" href="">
-      <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        </section>
+      </div>
+      <p class="tag">Article</p>
+      <p class="link-icon" href="">
+        <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path opacity="1" fill="#000000" d="M9 4L7.6 5.4l6.6 6.6-6.6 6.6L9 20l8-8"></path>
 </svg>
 
-    </p>
-  </div>
-</a>
+      </p>
+    </div>
+  </a>
+</section>
 
+<section class="games card-container" id="games">
   <a class="card full-card" href="/game/project-arrhythmia">
-  <div class="light">
-    <section class="heading">
+    <div class="light">
       <h3 class="title">Project Arrhythmia</h3>
-    </section>
-    <div class="card-content">
-      <img class="center-full" src="/assets/img/site/intro.gif"/>
-    </div>
-    <p class="tag">Link</p>
-    <p class="link-icon" href="">
-      <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <div class="card-content">
+        <img class="center-full" src="/assets/img/site/intro.gif"/>
+      </div>
+      <p class="tag">Link</p>
+      <p class="link-icon" href="">
+        <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path opacity="1" fill="#000000" d="M9 4L7.6 5.4l6.6 6.6-6.6 6.6L9 20l8-8"></path>
 </svg>
 
-    </p>
-  </div>
-</a>
-<!--<a class="card half-card" href="http://limestudios.itch.io">
-  <div class="dark">
-    <h3 class="title">Other Games</h3>
-    <div class="card-content">
-
+      </p>
     </div>
-    <p class="tag">Link</p>
-    <p class="link-icon" href="">
-      <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  </a>
+  <!--<a class="card half-card" href="http://limestudios.itch.io">
+    <div class="dark">
+      <h3 class="title">Other Games</h3>
+      <div class="card-content">
+
+      </div>
+      <p class="tag">Link</p>
+      <p class="link-icon" href="">
+        <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path opacity="1" fill="#000000" d="M9 4L7.6 5.4l6.6 6.6-6.6 6.6L9 20l8-8"></path>
 </svg>
 
-    </p>
-  </div>
-</a>-->
+      </p>
+    </div>
+  </a>-->
+</section>
 
-  
+
+<section class="social card-container" id="social">
   <a class="card half-card" href="https://www.livecoding.tv/lcraver">
-  <div class="dark">
-    <section class="heading">
+    <div class="dark">
       <h3 class="title">Coding Streams</h3>
-    </section>
-    <div class="card-content">
-      <img class="center-full" src="/assets/img/social/stream.png"/>
-    </div>
-    <p class="tag">Link</p>
-    <p class="link-icon" href="">
-      <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <div class="card-content">
+        <img class="center-full" src="/assets/img/social/stream.png"/>
+      </div>
+      <p class="tag">Link</p>
+      <p class="link-icon" href="">
+        <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path opacity="1" fill="#000000" d="M9 4L7.6 5.4l6.6 6.6-6.6 6.6L9 20l8-8"></path>
 </svg>
 
-    </p>
-  </div>
-</a>
-<a class="card half-card" href="https://github.com/lcraver">
-  <div class="light">
-    <section class="heading">
+      </p>
+    </div>
+  </a>
+  <a class="card half-card" href="https://github.com/lcraver">
+    <div class="light">
       <h3 class="title">Github</h3>
-    </section>
-    <div class="card-content">
-      <section class="center-large svg-dark"/>
-        <svg focusable="false" class="svg-icon twitter" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
+      <div class="card-content">
+        <section class="center-large svg-dark"/>
+          <svg focusable="false" class="svg-icon twitter" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 128 128" enable-background="new 0 0 128 128" xml:space="preserve">
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="#191717" d="M64,1.58c-35.341,0-64,28.652-64,63.999
 		c0,28.278,18.338,52.267,43.768,60.73c3.198,0.593,4.373-1.389,4.373-3.08c0-1.525-0.06-6.567-0.087-11.914
 		c-17.805,3.87-21.563-7.552-21.563-7.552c-2.911-7.397-7.105-9.364-7.105-9.364c-5.808-3.973,0.438-3.892,0.438-3.892
@@ -195,86 +190,80 @@
 		c-0.093-0.527,0.445-1.058,1.188-1.194C46.92,104.397,47.598,104.706,47.694,105.229L47.694,105.229z M47.694,105.229"/>
 </svg>
 
-      </section>
-    </div>
-    <p class="tag">Link</p>
-    <p class="link-icon" href="">
-      <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        </section>
+      </div>
+      <p class="tag">Link</p>
+      <p class="link-icon" href="">
+        <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path opacity="1" fill="#000000" d="M9 4L7.6 5.4l6.6 6.6-6.6 6.6L9 20l8-8"></path>
 </svg>
 
-    </p>
-  </div>
-</a>
-<a class="card full-card" href="https://dribbble.com/lcraver">
-  <div class="dark">
-    <section class="heading">
+      </p>
+    </div>
+  </a>
+  <a class="card full-card" href="https://dribbble.com/limestudios">
+    <div class="dark">
       <h3 class="title">Dribbble</h3>
-    </section>
-    <div class="card-content">
-      <img class="center-full" src="/assets/img/projects/dribbble/tapedeck.png"/>
-    </div>
-    <p class="tag">Link</p>
-    <p class="link-icon" href="">
-      <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <div class="card-content">
+        <img class="center-full" src="/assets/img/projects/dribbble/tapedeck.png"/>
+      </div>
+      <p class="tag">Link</p>
+      <p class="link-icon" href="">
+        <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path opacity="1" fill="#000000" d="M9 4L7.6 5.4l6.6 6.6-6.6 6.6L9 20l8-8"></path>
 </svg>
 
-    </p>
-  </div>
-</a>
-<a class="card half-card" href="https://www.youtube.com/channel/UCK3BRoeWBA5pIB5kH4n-brQ">
-  <div class="light">
-    <section class="heading">
+      </p>
+    </div>
+  </a>
+  <a class="card half-card" href="https://www.youtube.com/channel/UCK3BRoeWBA5pIB5kH4n-brQ">
+    <div class="light">
       <h3 class="title">Youtube</h3>
-    </section>
-    <div class="card-content">
-      <section class="center-large svg-dark"/>
-        <svg focusable="false" class="svg-icon svg-youtube" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+      <div class="card-content">
+        <section class="center-large svg-dark"/>
+          <svg focusable="false" class="svg-icon svg-youtube" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 	<path class="_fill-color" opacity="1" fill="#000000" d="M20,4.4C19.4,4.2,15.7,4,12,4C8.3,4,4.6,4.19,4,4.38C2.44,4.9,2,8.4,2,12s0.44,7.1,2,7.62C4.6,19.81,8.3,20,12,20
 		c3.7,0,7.4-0.19,8-0.38c1.56-0.52,1.99-4.02,1.99-7.62S21.56,4.92,20,4.4z M10,16.5v-9l6,4.5L10,16.5z"></path>
 </svg>
 
-      </section>
-    </div>
-    <p class="tag">Link</p>
-    <p class="link-icon" href="">
-      <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        </section>
+      </div>
+      <p class="tag">Link</p>
+      <p class="link-icon" href="">
+        <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path opacity="1" fill="#000000" d="M9 4L7.6 5.4l6.6 6.6-6.6 6.6L9 20l8-8"></path>
 </svg>
 
-    </p>
-  </div>
-</a>
-<a class="card half-card" href="https://twitter.com/liamcraver">
-  <div class="dark">
-    <section class="heading">
+      </p>
+    </div>
+  </a>
+  <a class="card half-card" href="https://twitter.com/liamcraver">
+    <div class="dark">
       <h3 class="title">Twitter</h3>
-    </section>
-    <div class="card-content">
-      <section class="center-large svg-light"/>
-        <svg focusable="false" class="svg-icon twitter" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+      <div class="card-content">
+        <section class="center-large svg-light"/>
+          <svg focusable="false" class="svg-icon twitter" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
     <path class="_fill-color" opacity="1" fill="#000000" d="M1,18.9c1.94,1.23,4.17,2.22,7.25,2.09c7.46-0.34,12.46-5.69,12.57-13.51C21.62,6.8,22.57,6,23,5.1
       c-0.69,0.35-1.51,0.57-2.43,0.7c0.84-0.62,1.53-1.38,1.89-2.49c-0.87,0.46-1.77,0.88-2.88,1.09c-2.62-3.18-8.9-0.61-7.8,4.12
       c-4.41-0.27-7.1-2.27-9.34-4.72c-1.28,2.07-0.17,5.2,1.34,6.06C3,9.82,2.41,9.58,1.85,9.32c0.08,2.6,1.51,3.85,3.52,4.52
       C4.76,13.97,4.08,14,3.43,13.89c0.62,1.82,1.94,2.96,4.17,3.18C6.09,18.36,3.27,19.27,1,18.9z"></path>
 </svg>
 
-      </section>
-    </div>
-    <p class="tag">Link</p>
-    <p class="link-icon" href="">
-      <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        </section>
+      </div>
+      <p class="tag">Link</p>
+      <p class="link-icon" href="">
+        <svg class="svg-icon tile-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
   <path opacity="1" fill="#000000" d="M9 4L7.6 5.4l6.6 6.6-6.6 6.6L9 20l8-8"></path>
 </svg>
 
-    </p>
-  </div>
-</a>
-
-  
-  
+      </p>
+    </div>
+  </a>
 </section>
+
+
+
 
     </div>
   </div>
@@ -319,7 +308,7 @@
 </svg>
 
         </a>
-        <a href="https://dribbble.com/lcraver" class="dribbble">
+        <a href="https://dribbble.com/limestudios" class="dribbble">
           <svg focusable="false" class="svg-icon svg-dribbble" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
 	<path class="_fill-color" opacity="1" fill="#000000" d="M12,4c4.41,0,8,3.59,8,8s-3.59,8-8,8s-8-3.59-8-8S7.59,4,12,4 M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10
 		c5.52,0,10-4.48,10-10S17.52,2,12,2L12,2z"></path>
@@ -359,15 +348,5 @@
 </footer>
 
 </body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-68277827-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </html>
 
