@@ -670,8 +670,8 @@ a.github {
           top: calc(50% - 32px);
           left: calc(50% - 32px);
           margin: 32px;
-          max-width: calc(100% - large-padding);
-          max-height: calc(100% - large-padding); }
+          max-width: calc(100% - 32px);
+          max-height: calc(100% - 32px); }
         .card-container a.card .card-content img.center-full, .card-container a.card .card-content section.center-full {
           top: 50%;
           left: 50%;
