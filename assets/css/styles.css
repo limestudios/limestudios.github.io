@@ -552,8 +552,8 @@ a.github {
           flex-wrap: wrap; }
   .card-container.transition .card {
     opacity: 0;
-    -webkit-animation: slidein calc(0.25s * (1 / 0.9)) ease-in-out;
-            animation: slidein calc(0.25s * (1 / 0.9)) ease-in-out;
+    -webkit-animation: slidein 0.2s ease-in-out;
+            animation: slidein 0.2s ease-in-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards; }
   .card-container.transition a:nth-child(1) {
@@ -739,12 +739,12 @@ header {
     padding: 0 16px;
     box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    -webkit-animation: fadein calc(0.25s * (1 / 0.9)) ease-out;
-            animation: fadein calc(0.25s * (1 / 0.9)) ease-out;
+    -webkit-animation: fadein 0.25s ease-out;
+            animation: fadein 0.25s ease-out;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-transition: background-color 0.25s ease-in-out;
-            transition: background-color 0.25s ease-in-out; }
+    -webkit-transition: background-color 0.2s ease-in-out;
+            transition: background-color 0.2s ease-in-out; }
     header .header-position.fade-in {
       background-color: white; }
       header .header-position.fade-in .header-wrapper {
@@ -789,7 +789,8 @@ header {
           max-width: 96px;
           margin: 0;
           float: left;
-          display: block; }
+          display: block;
+          width: 100%; }
         header .header-position .logo-wrapper a .text {
           padding-left: 20px;
           float: left;
@@ -887,8 +888,9 @@ header {
   height: 50vw;
   width: 100%;
   overflow: hidden;
-  -webkit-animation: slidein calc(0.25s * (1 / 0.9)) ease-out;
-          animation: slidein calc(0.25s * (1 / 0.9)) ease-out;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  -webkit-animation: slidein 0.25s ease-out;
+          animation: slidein 0.25s ease-out;
   position: relative;
   top: 64px;
   margin-bottom: 32px;
@@ -911,10 +913,10 @@ header {
       padding-top: 16px;
       padding-left: 32px;
       opacity: 0;
-      -webkit-animation: fadein calc(0.3s * (1 / 0.9)) ease-out;
-              animation: fadein calc(0.3s * (1 / 0.9)) ease-out;
-      -webkit-animation-delay: calc(0.25s * (1 / 0.9));
-              animation-delay: calc(0.25s * (1 / 0.9));
+      -webkit-animation: fadein 0.3s ease-out;
+              animation: fadein 0.3s ease-out;
+      -webkit-animation-delay: 0.25s;
+              animation-delay: 0.25s;
       -webkit-animation-fill-mode: forwards;
               animation-fill-mode: forwards;
       letter-spacing: 1px;
@@ -937,10 +939,10 @@ header {
     .post-header .post-text p {
       padding-left: 32px;
       opacity: 0;
-      -webkit-animation: fadein calc(0.3s * (1 / 0.9)) ease-out;
-              animation: fadein calc(0.3s * (1 / 0.9)) ease-out;
-      -webkit-animation-delay: calc(0.5s * (1 / 0.9));
-              animation-delay: calc(0.5s * (1 / 0.9));
+      -webkit-animation: fadein 0.3s ease-out;
+              animation: fadein 0.3s ease-out;
+      -webkit-animation-delay: 0.4s;
+              animation-delay: 0.4s;
       -webkit-animation-fill-mode: forwards;
               animation-fill-mode: forwards;
       color: #212121;
@@ -952,26 +954,22 @@ header {
       @media (max-width: 775px) {
         .post-header .post-text p {
           padding-left: 16px; } }
-  .post-header.light {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24), inset 0 128px 256px -64px rgba(255, 255, 255, 0.5); }
-    .post-header.light h2 {
-      color: #212121; }
-    .post-header.light p {
-      color: #212121; }
-  .post-header.dark {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24), inset 0 128px 256px -64px rgba(0, 0, 0, 0.5); }
-    .post-header.dark h2 {
-      color: #fafafa; }
-    .post-header.dark p {
-      color: #fafafa; }
+  .post-header.light h2 {
+    color: #212121; }
+  .post-header.light p {
+    color: #212121; }
+  .post-header.dark h2 {
+    color: #fafafa; }
+  .post-header.dark p {
+    color: #fafafa; }
 
 .post-sections {
   width: 100%;
   max-width: 1680px;
   margin: 0 auto;
   opacity: 0;
-  -webkit-animation: slidein calc(0.25s * (1 / 0.9)) ease-out;
-          animation: slidein calc(0.25s * (1 / 0.9)) ease-out;
+  -webkit-animation: slidein 0.25s ease-out;
+          animation: slidein 0.25s ease-out;
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
   -webkit-animation-fill-mode: forwards;
