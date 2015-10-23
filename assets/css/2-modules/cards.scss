@@ -170,8 +170,8 @@ $full-padding: 0px;
           top: calc(50% - #{$medium-padding});
           left: calc(50% - #{$medium-padding});
           margin: $medium-padding;
-          max-width: calc(50% - #{$medium-padding});
-          max-height: calc(50% - #{$medium-padding});
+          max-width: $medium-size;
+          max-height: $medium-size;
         }
 
         &.center-large {

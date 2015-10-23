@@ -658,20 +658,20 @@ a.github {
           top: calc(50% - 128px);
           left: calc(50% - 128px);
           margin: 128px;
-          max-width: calc(100% - small-padding);
-          max-height: calc(100% - small-padding); }
+          max-width: 128px;
+          max-height: 128px; }
         .card-container a.card .card-content img.center-medium, .card-container a.card .card-content section.center-medium {
           top: calc(50% - 64px);
           left: calc(50% - 64px);
           margin: 64px;
-          max-width: calc(100% - 64px);
-          max-height: calc(100% - 64px); }
+          max-width: 256px;
+          max-height: 256px; }
         .card-container a.card .card-content img.center-large, .card-container a.card .card-content section.center-large {
           top: calc(50% - 32px);
           left: calc(50% - 32px);
           margin: 32px;
-          max-width: calc(100% - 32px);
-          max-height: calc(100% - 32px); }
+          max-width: 512px;
+          max-height: 512px; }
         .card-container a.card .card-content img.center-full, .card-container a.card .card-content section.center-full {
           top: 50%;
           left: 50%;
@@ -1022,8 +1022,17 @@ header {
       font-style: normal;
       font-variant: normal;
       line-height: 32px; }
-    .post-sections .post-content p, .post-sections .post-content ul, .post-sections .post-content ol, .post-sections .post-content .button, .post-sections .post-content li {
+    .post-sections .post-content p, .post-sections .post-content ol, .post-sections .post-content .button, .post-sections .post-content li {
       padding: 0 0 24px 40px;
+      margin: 0 auto;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      line-height: 32px;
+      font-size: 17px;
+      font-family: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+      color: #424242; }
+    .post-sections .post-content ul {
+      padding: 0 0 24px 16px !important;
       margin: 0 auto;
       font-weight: 300;
       -webkit-font-smoothing: antialiased;
