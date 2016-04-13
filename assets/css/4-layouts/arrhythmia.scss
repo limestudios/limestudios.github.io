@@ -47,6 +47,19 @@
 
   .trailer {
     margin: 32px 0px;
+
+    .play-button {
+      background-image: url(/assets/img/posts/game/project-arrhythmia/play-button.png);
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+    }
+
+    .flex-video {
+      background-image: url(/assets/img/posts/game/project-arrhythmia/cover.png) !important;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   .social {
