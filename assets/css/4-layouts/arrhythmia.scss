@@ -45,6 +45,11 @@
     }
   }
 
+.preorder {
+  width: 552px;
+  margin: 0 auto;
+}
+
   .trailer {
     margin: 32px 0px;
 
@@ -53,12 +58,19 @@
       position: absolute;
       top: 0px;
       bottom: 0px;
+      left: 0px;
+      right: 0px;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
     }
 
     .flex-video {
-      background-image: url(/assets/img/posts/game/project-arrhythmia/cover.png) !important;
+      background-image: url(/assets/img/posts/game/project-arrhythmia/trailer-image.png) !important;
       background-repeat: no-repeat;
       background-size: contain;
+      background-position: center;
+      //border: 2px solid $red-300;
     }
   }
 

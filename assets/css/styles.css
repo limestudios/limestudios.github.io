@@ -925,6 +925,9 @@ header {
           font-size: 16px;
           line-height: 16px;
           padding: 16px 0; } }
+  .arrhythmia-wrap .preorder {
+    width: 552px;
+    margin: 0 auto; }
   .arrhythmia-wrap .trailer {
     margin: 32px 0px; }
     .arrhythmia-wrap .trailer .play-button {
