@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang=en xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Fluttr</title>
+		<meta name=description content="">
+		<meta charset=UTF-8>
+		<meta http-equiv=X-UA-Compatible content="IE=Edge,chrome=1">
+		<meta name=viewport content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+		<link rel=stylesheet href="/css/main.css">
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="/js/libs/angular.min.js" type="text/javascript"></script>
+		<script src="/js/styles/header.js" type="text/javascript"></script>
+
+		<script>
+			$(document).on("scroll", function(){
+				var height = $(window).width();
+				var scrollTop = $(document).scrollTop();
+
+				$(".header").height(height - scrollTop);
+
+				if((height - scrollTop) <= 48)
+				{
+					$(".now-playing").addClass("stick");
+					$(".bg").removeClass("show").addClass("hide");
+					$("body").addClass("small-header");
+				}
+				else
+				{
+					$(".now-playing").removeClass("stick");
+					$(".bg").removeClass("hide").addClass("show");
+					$("body").removeClass("small-header");
+				}
+			});
+		</script>
+
+		<meta name="theme-color" content="#FF6E40">
+	</head>
+	<body ng-app="fluttr" ng-controller="fluttrCtrl">
+
+		<div class="location-popup" ng-class="{'hidden': hasLocation}">
+			<div class="location-icon">
+				<svg viewBox="0 0 24 24">
+				    <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+				</svg>
+			</div>
+
+			<div class="location-header">
+				Please select a location to continue.
+			</div>
+
+			<div class="locations">
+				<location-element ng-repeat="location in possibleLocations | orderBy:'relativeDistance'" location="location" hasLocation="hasLocation"></location-element>
+			</div>
+		</div>
+
+		<header ng-if="hasLocation"></header>
+
+		<div class="queue-title">
+			Up Next
+		</div>
+		<div class="list" ng-if="hasLocation">
+			<queue-element ng-repeat="song in queue | orderBy:'-localVotes'" song="song"></queue-element>
+		</div>
+	</body>
+</html>
