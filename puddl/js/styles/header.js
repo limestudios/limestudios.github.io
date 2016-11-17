@@ -198,7 +198,7 @@ app.controller('fluttrCtrl', function ($rootScope, $scope, $http) {
 app.directive('header', function () {
     return {
         replace: true,
-        templateUrl: "/directives/header.html",
+        templateUrl: "directives/header.html",
         controller: ['$scope', '$filter', function ($scope, $filter) {
 
           $scope.flipSearch = function() {
@@ -217,7 +217,7 @@ app.directive('header', function () {
 app.directive('queueElement', function () {
     return {
       replace: true,
-      templateUrl: "/directives/queueElement.html",
+      templateUrl: "directives/queueElement.html",
       scope: { song: '=song' },
       controller: ['$scope', '$rootScope', '$filter', '$http', function ($scope, $rootScope, $filter, $http) {
 
@@ -284,7 +284,7 @@ app.directive('searchElement', function () {
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: "/directives/searchElement.html",
+      templateUrl: "directives/searchElement.html",
       scope: { song: '=song' },
       controller: ['$scope', '$rootScope', '$filter', '$http', function ($scope, $rootScope, $filter, $http) {
 
@@ -350,7 +350,7 @@ app.directive('searchElement', function () {
 app.directive('locationElement', function () {
     return {
       replace: true,
-      templateUrl: "/directives/locationElement.html",
+      templateUrl: "directives/locationElement.html",
       scope: { location: '=location' },
       controller: ['$rootScope', '$scope', '$filter', '$http', function ($rootScope, $scope, $filter, $http) {
 
