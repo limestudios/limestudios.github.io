@@ -48,6 +48,31 @@
 .preorder {
   width: 552px;
   margin: 0 auto;
+
+  .itch {
+    margin-top: 32px;
+    display: block;
+  }
+
+  .steam {
+    display: block;
+  }
+
+  .small {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    width: 320px;
+
+    .itch, .steam {
+      display: none;
+    }
+
+    .small {
+      display: block;
+    }
+  }
 }
 
   .trailer {

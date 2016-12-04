@@ -928,6 +928,20 @@ header {
   .arrhythmia-wrap .preorder {
     width: 552px;
     margin: 0 auto; }
+    .arrhythmia-wrap .preorder .itch {
+      margin-top: 32px;
+      display: block; }
+    .arrhythmia-wrap .preorder .steam {
+      display: block; }
+    .arrhythmia-wrap .preorder .small {
+      display: none; }
+    @media (max-width: 600px) {
+      .arrhythmia-wrap .preorder {
+        width: 320px; }
+        .arrhythmia-wrap .preorder .itch, .arrhythmia-wrap .preorder .steam {
+          display: none; }
+        .arrhythmia-wrap .preorder .small {
+          display: block; } }
   .arrhythmia-wrap .trailer {
     margin: 32px 0px; }
     .arrhythmia-wrap .trailer .play-button {
