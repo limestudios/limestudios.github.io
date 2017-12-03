@@ -600,6 +600,15 @@
               padding: 8px;
             }
           }
+
+          @media (max-width: $screen-widephone) {
+            max-width: 50%;
+
+            &.border {
+              max-width: calc(50% - 16px);
+              padding: 8px;
+            }
+          }
         }
 
         &.small {
