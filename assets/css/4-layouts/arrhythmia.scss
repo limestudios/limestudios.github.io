@@ -10,141 +10,143 @@
     overflow: hidden;
   }
 
-  img {
-    margin: 24px auto;
-    max-width: 100%;
-    display: block;
-
-    &.center {
-      margin-left: auto;
-      margin-right: auto;
+  .image-wrapper {
+    img {
+      margin: 24px auto;
+      max-width: 100%;
       display: block;
 
-      &.small {
-        max-width: 128px;
-      }
+      &.center {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
 
-      &.medium {
-        max-width: 256px;
-      }
-
-      &.large {
-        max-width: 512px;
-      }
-
-      &.full-width {
-        width: 100%;
-      }
-    }
-
-    &.float {
-      float: left;
-      margin: 0;
-      padding: 0;
-      @include clearfix();
-
-      &.xsmall {
-        max-width: 25%;
-
-        &.border {
-          max-width: calc(25% - 16px);
-          padding: 8px;
+        &.small {
+          max-width: 128px;
         }
 
-        @media (max-width: $screen-tablet) {
+        &.medium {
+          max-width: 256px;
+        }
+
+        &.large {
+          max-width: 512px;
+        }
+
+        &.full-width {
+          width: 100%;
+        }
+      }
+
+      &.float {
+        float: left;
+        margin: 0;
+        padding: 0;
+        @include clearfix();
+
+        &.xsmall {
           max-width: 25%;
 
           &.border {
             max-width: calc(25% - 16px);
             padding: 8px;
           }
-        }
 
-        @media (max-width: $screen-widephone) {
-          max-width: 50%;
+          @media (max-width: $screen-tablet) {
+            max-width: 25%;
 
-          &.border {
-            max-width: calc(50% - 16px);
-            padding: 8px;
+            &.border {
+              max-width: calc(25% - 16px);
+              padding: 8px;
+            }
+          }
+
+          @media (max-width: $screen-widephone) {
+            max-width: 50%;
+
+            &.border {
+              max-width: calc(50% - 16px);
+              padding: 8px;
+            }
           }
         }
-      }
 
-      &.small {
-        max-width: 25%;
+        &.small {
+          max-width: 25%;
 
-        &.border {
-          max-width: calc(25% - 16px);
-          padding: 8px;
+          &.border {
+            max-width: calc(25% - 16px);
+            padding: 8px;
+          }
+
+          @media (max-width: $screen-tablet) {
+            max-width: 33.333%;
+
+            &.border {
+              max-width: calc(33.333% - 16px);
+              padding: 8px;
+            }
+          }
         }
 
-        @media (max-width: $screen-tablet) {
+        &.medium {
           max-width: 33.333%;
 
           &.border {
             max-width: calc(33.333% - 16px);
             padding: 8px;
           }
+
+          @media (max-width: $screen-tablet) {
+            max-width: 50%;
+
+            &.border {
+              max-width: calc(50% - 16px);
+              padding: 8px;
+            }
+          }
         }
-      }
 
-      &.medium {
-        max-width: 33.333%;
-
-        &.border {
-          max-width: calc(33.333% - 16px);
-          padding: 8px;
-        }
-
-        @media (max-width: $screen-tablet) {
+        &.large {
           max-width: 50%;
 
           &.border {
             max-width: calc(50% - 16px);
             padding: 8px;
           }
-        }
-      }
 
-      &.large {
-        max-width: 50%;
+          @media (max-width: $screen-tablet) {
+            max-width: 100%;
 
-        &.border {
-          max-width: calc(50% - 16px);
-          padding: 8px;
-        }
-
-        @media (max-width: $screen-tablet) {
-          max-width: 100%;
-
-          &.border {
+            &.border {
+            }
           }
         }
+
+        &.full-width {
+          max-width: 100%;
+        }
       }
 
-      &.full-width {
-        max-width: 100%;
-      }
-    }
+      &.round {
+        border-radius: 100%;
+        object-fit: cover;
 
-    &.round {
-      border-radius: 100%;
-      object-fit: cover;
+        &.small {
+          min-height: 128px;
+        }
 
-      &.small {
-        min-height: 128px;
-      }
+        &.medium {
+          min-height: 256px;
+        }
 
-      &.medium {
-        min-height: 256px;
-      }
+        &.large {
+          min-height: 512px;
+        }
 
-      &.large {
-        min-height: 512px;
-      }
-
-      &.full-width {
-        height: 100%;
+        &.full-width {
+          height: 100%;
+        }
       }
     }
   }
@@ -179,13 +181,16 @@
   nav.arrhythmia_top {
 
     height: 48px;
-    width: calc(100% + 32px);
     left: 0px;
     right: 0px;
     position: absolute;
     margin-top: 0px;
     top: 0px;
     background: #222222;
+
+    @media (max-width: 700px) {
+      height: 96px;
+    }
 
     ul {
       list-style: none;
@@ -194,7 +199,9 @@
       align-items: stretch;
       justify-content: center;
       align-content: center;
-      margin-top: 0px;
+      margin: 0px;
+      padding: 0px;
+      flex-wrap: wrap;
 
       a {
         display: flex;
@@ -232,6 +239,10 @@
     height: 128px;
     margin-top: 80px;
 
+    @media (max-width: 700px) {
+      margin-top: 128px;
+    }
+
     img {
       max-height: 128px;
       padding-right: 16px;
@@ -244,8 +255,17 @@
       letter-spacing: 8px;
       font-size: 32px;
       line-height: 32px;
-      padding: 32px 0;
       text-transform: uppercase;
+      width: calc(40% - 144px);
+      float: left;
+    }
+
+    .quote {
+      float: right;
+      width: 60%;
+      text-align: right;
+      padding: 0px 0px 0px 128px;
+      box-sizing: border-box;
     }
 
     @media (max-width: $screen-widephone) {
@@ -260,7 +280,19 @@
       h2 {
         font-size: 16px;
         line-height: 16px;
-        padding: 16px 0;
+        padding: 0px 0;
+        float: none;
+      }
+    }
+
+    @media (max-width: $screen-tablet) {
+      h2 {
+        float: left;
+        width: auto;
+      }
+
+      .quote {
+        display: none;
       }
     }
   }
@@ -346,11 +378,30 @@
     color: $grey-900;
     display: inline-block;
 
+    &.twitter {
+      background-color: $blue-400;
+      color: white;
+    }
+
+    &.discord {
+      background-color: $indigo-500;
+      color: white;
+    }
+
     &:hover {
       background-color: $red-300 !important;
       color: white !important;
       box-shadow: none;
     }
+
+    &.twitter:hover {
+      background-color: $blue-800 !important;
+    }
+
+    &.discord:hover {
+      background-color: $indigo-900 !important;
+    }
+
 
     @media (max-width: $screen-tablet) {
       margin: 8px 0px;
@@ -361,6 +412,10 @@
     margin: 0 0;
     padding: 0 !important;
     max-width: 640px;
+
+    .clear {
+      clear: none !important;
+    }
 
     input[type=email] {
       font-size: 14px;
@@ -385,7 +440,8 @@
       display: inline-block;
       color: $grey-900 !important;
       border-radius: 0px !important;
-      margin-top: 16px !important;
+      //margin-top: 16px !important;
+      margin: 16px 0 !important;
       transition: 0s !important;
 
       &:hover {
