@@ -1071,7 +1071,9 @@ header {
         display: none; } }
   .arrhythmia-wrap .preorder {
     width: 552px;
-    margin: 0 auto; }
+    margin: 64px auto; }
+    .arrhythmia-wrap .preorder .pre-order {
+      margin-bottom: 32px !important; }
     .arrhythmia-wrap .preorder .arrhythmia-button {
       width: 100%;
       text-align: center;
