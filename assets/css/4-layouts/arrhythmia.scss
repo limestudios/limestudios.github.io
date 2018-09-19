@@ -180,10 +180,11 @@
 
 .preorder {
   width: 552px;
-  margin: 0 auto;
+  margin: 64px auto;
 
   .pre-order {
-    margin-top: 32px !important;
+    // margin-top: 32px !important;
+    margin-bottom: 32px !important;
   }
 
   .arrhythmia-button
