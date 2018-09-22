@@ -1633,7 +1633,8 @@ h2.portfolio {
     .post-sections .post-content img {
       margin: 24px auto;
       max-width: 100%;
-      display: block; }
+      display: block;
+      width: 100%; }
       .post-sections .post-content img.center {
         margin-left: auto;
         margin-right: auto;
@@ -1705,6 +1706,9 @@ h2.portfolio {
               max-width: 100%; } }
         .post-sections .post-content img.float.full-width {
           max-width: 100%; }
+          .post-sections .post-content img.float.full-width.border {
+            max-width: calc(100% - 16px);
+            padding: 8px; }
       .post-sections .post-content img.round {
         border-radius: 100%;
         -o-object-fit: cover;

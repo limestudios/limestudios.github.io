@@ -555,6 +555,7 @@
       margin: 24px auto;
       max-width: 100%;
       display: block;
+      width: 100%;
 
       &.center {
         margin-left: auto;
@@ -665,6 +666,11 @@
 
         &.full-width {
           max-width: 100%;
+
+          &.border {
+            max-width: calc(100% - 16px);
+            padding: 8px;
+          }
         }
       }
 
